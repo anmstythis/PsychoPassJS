@@ -1,0 +1,83 @@
+body
+{
+    width: min-content;
+    height: max-content;
+}
+
+.thumb
+{
+    width: min-content;
+    height: max-content;
+    display: grid;
+    grid-template-rows: 0.25fr 0.25fr 0.25fr 0.25fr 0.25fr 1fr;
+}
+
+.textbox
+{
+    width: 200px;
+    border-radius: 100px;
+    border-color: cadetblue;
+}
+
+.enterblock
+{
+    align-self: top;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    row-gap: 30px;
+}
+
+.entertext
+{
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+    row-gap: 30px;
+}
+
+label
+{
+    font-size: 10pt;
+    font-family: monospace;
+    font-style: oblique;
+    font-weight: 100;
+}
+
+h2
+{
+    grid-row:1;
+    font-family: monospace;
+    font-size: 24pt;
+    color: #183f35;
+}
+
+button
+{
+    height: 20px;
+    margin-top: 40px;
+    border-radius: 100px;
+    border-color: cadetblue;
+    background-color: rgb(152, 244, 213);
+}
+
+h4
+{
+    grid-row:4;
+    font-family: monospace;
+    font-size: 20pt;
+    color: #183f35;
+}
+
+.list
+{
+    grid-row: 5;
+}
+
+.options
+{
+    grid-row: 3;
+    display: flex;
+    flex-direction: column-reverse;
+}

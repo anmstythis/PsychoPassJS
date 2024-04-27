@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "style.css">
+        <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROb2jy3y7a9WaUV976sLxBUBRA-urN8xstHYuVdJKoQw&s">
+        <title>Psycho-Pass</title>
+    </head>
+    <body> 
+        <section class="thumb">
+            <h2>Какого цвета ваш психопаспорт?</h2>
+            <div class="enterblock">
+                <form>
+                    <label for="surname">Введите фамилию: </label>
+                    <input id="surname" class="textbox">
+
+                    <label for="name">Введите имя</label>
+                    <input id="name" class="textbox">
+
+                    <label for="patrimony">Введите отчество (если есть)</label>
+                    <input id="patrimony" class="textbox">
+
+                    <label for="crime">Введите коэффициент преступности</label> 
+                    <input id="crime" class="textbox">
+                </form>
+            </div>
+            <div class="options">
+                <button id="colorOut">Рассчитать цвет</button>
+                <button id="delete">Удалить человека из списка</button>
+                <button id="change">Изменить элемент списка</button>
+                <button id="add">Добавить человека в список</button>
+            </div>
+            <h4>Список людей</h4>
+            <table class="list" id="peoplelist"></table>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>
