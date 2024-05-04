@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel = "stylesheet" href = "style.css"> -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROb2jy3y7a9WaUV976sLxBUBRA-urN8xstHYuVdJKoQw&s">
+        <title>Psycho-Pass</title>
+    </head>
+    <body> 
+        <section class="container">
+            <p class="h2 mb-5">Какого цвета ваш психопаспорт?</p>
+
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Фамилия</span>
+                </div>
+                <input id="surname" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Имя</span>
+                </div>
+                <input id="name" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Отчество (если есть)</span>
+                </div>
+                <input id="patrimony" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Коэффициент преступности</span>
+                </div>
+                <input id="crime" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                <button type="button" class="btn btn-outline-secondary btn-sm" id="colorOut">Рассчитать цвет</button>
+            </div>
+            
+            <div class="row mb-4 justify-content-center">
+                <button type="button" class="btn btn-outline-primary btn-sm" id="add">Добавить человека в список</button>
+            </div>
+
+            <p class="h4">Список людей</p>
+            <table class="table table-borderless mb-5" id="peoplelist"></table>
+
+            <div class="input-group mb-3">
+                <input id="forChange" type="text" class="form-control" placeholder="Введите ID человека" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                <button type="button" class="btn btn-outline-primary btn-sm" id="change">Изменить элемент списка</button>
+                </div>
+            </div>
+            
+            <div class="input-group mb-3">
+                <input id="forDelete" type="text" class="form-control" placeholder="Введите ID человека" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                <button type="button" class="btn btn-outline-primary btn-sm" id="delete">Удалить человека из списка</button>
+                </div>
+            </div>
+        </section>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    </body>
+</html>
